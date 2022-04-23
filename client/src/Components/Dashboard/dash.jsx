@@ -1,6 +1,6 @@
 import React from "react";
 
-function Dash(){
+function Dash(props){
 	return(
 		<div className="min-h-screen bg-pink-300">
 			<h1 className="text-4xl ">These are registered with as</h1>
