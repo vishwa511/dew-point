@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Landing2() {
     return (
         // <div className="flex-c h-14 ">
@@ -16,7 +16,12 @@ function Landing2() {
             </div>
             <div className="flex flex-col">
             
-            <h1 className="text-3xl italic m-20">Your landing page starts with the right domain. Claim yours today</h1>
+            <h1 className="m-20 text-3xl italic">Am i Registered???</h1>
+			<button className="p-4 ml-4 bg-red-400 border">
+            <Link to="/Dashboard" className="p-4">
+              Go to dashboard
+            </Link>
+          </button>
             </div>
         </div>
 

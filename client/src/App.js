@@ -1,19 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
-import Hero from './Components/Landing/Hero';
-import Nav from './Components/Navbar/Nav';
-import Landing2 from './Components/Landing/landing2';
-import Landing3 from './Components/Landing/landing3';
-
+// import './App.css';
+import Home from './Pages/Home';
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Nav from './Components/Navbar/Nav'
+import LoginPage from './Pages/LoginPage';
+import Dashboard from './Pages/Dashboard';
 function App() {
   return (
-    <h1 className="">
-		<Nav/>
-      <Hero />
-      <Landing2 />
-      <Landing3 />
-    </h1>
-
+    <>
+	<Nav/>
+	<Routes>
+	
+	<Route path="/" element={<Home/>} />
+	<Route path="/Signup" element={<LoginPage/>} />
+	<Route path="/Dashboard" element={<Dashboard/>} />
+	{/* <Route path="/login" element={<Login />} />
+	<Route path="/signup" element={<Signup />} />
+	<Route path="/dash" element={<Dash />} />
+	 */}
+	</Routes>
+	</>
   );
 }
 
